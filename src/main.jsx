@@ -17,7 +17,7 @@ import CustomFooter from "./components/footer/footer.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Meals />,
     errorElement: <ErrorPage />,
   },
   {
