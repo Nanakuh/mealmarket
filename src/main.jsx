@@ -11,6 +11,8 @@ import HowItWorks from "./routes/how-it-works.jsx";
 import Faqs from "./routes/faqs.jsx";
 
 import "./index.css";
+import CustomNavbar from "./components/navbar/navbar.jsx";
+import CustomFooter from "./components/footer/footer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,7 +44,14 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    
+    <div className="flex flex-col h-screen justify-between">
+      <CustomNavbar />
+      <div className="flex flex-col items-start justify-center"><RouterProvider router={router} /></div>
+      
+      <CustomFooter />
+    </div>
+   
   </React.StrictMode>
 );
 

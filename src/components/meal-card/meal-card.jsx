@@ -114,7 +114,7 @@ function MealCard({
       </div>
       <div className="flex items-center justify-between">
         <span className="text-3xl font-bold text-gray-900 dark:text-white">
-          {price} €
+          {price/100} €
         </span>
 
         <Button color="success" disabled={soldOut}>
