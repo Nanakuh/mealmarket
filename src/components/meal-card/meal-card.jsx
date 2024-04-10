@@ -16,6 +16,7 @@ import {
   LupinIcon,
   MolluscIcon,
 } from "react-allergens";
+import NutritionalData from "../nutritional-data/nutritional-data";
 
 MealCard.propTypes = {
   title: PropTypes.string.isRequired,
@@ -89,13 +90,14 @@ function MealCard({
 
   return (
     <Card className="max-w-sm m-5" imgAlt={title} imgSrc={imgUrl}>
-      <a href={`/${title}`}>
+      <div className="flex items-center justify-between">
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
           {title}
         </h5>
-      </a>
-      <div className="flex items-center justify-between">
         <p>{weight}</p>
+      </div>
+      <div className="flex items-center justify-between">
+        
         <div className="flex flex-row ">
           {allergens.map((allergen, i) => {
             return (
@@ -106,11 +108,10 @@ function MealCard({
           })}
         </div>
       </div>
-      <div className="flex items-center justify-between">
-        <p>{calories} calories</p>
-        <p>{`proteins: ${nutrition.proteins}`}</p>
-        <p>{`carbohydrates: ${nutrition.carbohydrates}`}</p>
-        <p>{`fats: ${nutrition.fats}`}</p>
+      <div className="bg-gray-100 flex items-center justify-around p-2 rounded-3xl">
+        {nutrition.map((item, i) => (
+          <NutritionalData key={i} name={item.name} value={item.value} />
+        ))}
       </div>
       <div className="flex items-center justify-between">
         <span className="text-3xl font-bold text-gray-900 dark:text-white">

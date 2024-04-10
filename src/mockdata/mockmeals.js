@@ -5,12 +5,13 @@ export const mockMeals = [
     weight: "250 gr",
     allergens: ["Nuts", "Milk"],
     price: 820,
-    calories: 350,
-    nutrition: {
-      proteins: "20g",
-      carbohydrates: "30g",
-      fats: "10g",
-    },
+    nutrition: [
+      { name: `calories`, value: "350" },
+      { name: `proteins`, value: "20g" },
+      { name: `carbohydrates`, value: "30g" },
+      { name: `fats`, value: "10g" },
+    ],
+
     soldOut: false,
   },
   {
@@ -19,12 +20,12 @@ export const mockMeals = [
     weight: "300 gr",
     allergens: ["Soya", "Egg", "Gluten"],
     price: 960,
-    calories: 400,
-    nutrition: {
-      proteins: "25g",
-      carbohydrates: "35g",
-      fats: "15g",
-    },
+    nutrition: [
+      { name: `calories`, value: "425" },
+      { name: `proteins`, value: "25g" },
+      { name: `carbohydrates`, value: "35g" },
+      { name: `fats`, value: "15g" },
+    ],
     soldOut: true,
   },
   {
@@ -33,12 +34,12 @@ export const mockMeals = [
     weight: "150 gr",
     allergens: ["Soya", "Sesame", "Mustard"],
     price: 750,
-    calories: 550,
-    nutrition: {
-      proteins: "22g",
-      carbohydrates: "40g",
-      fats: "25g",
-    },
+    nutrition: [
+      { name: `calories`, value: "550" },
+      { name: `proteins`, value: "15g" },
+      { name: `carbohydrates`, value: "35g" },
+      { name: `fats`, value: "10g" },
+    ],
     soldOut: false,
   },
   {
@@ -47,12 +48,12 @@ export const mockMeals = [
     weight: "200 gr",
     allergens: ["Fish", "Celery"],
     price: 900,
-    calories: 450,
-    nutrition: {
-      proteins: "30g",
-      carbohydrates: "10g",
-      fats: "20g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -61,12 +62,12 @@ export const mockMeals = [
     weight: "350 gr",
     allergens: ["Soya", "Mollusc", "Lupin", "Peanut"],
     price: 875,
-    calories: 480,
-    nutrition: {
-      proteins: "26g",
-      carbohydrates: "55g",
-      fats: "18g",
-    },
+    nutrition: [
+      { name: `calories`, value: "480" },
+      { name: `proteins`, value: "26g" },
+      { name: `carbohydrates`, value: "55g" },
+      { name: `fats`, value: "18g" },
+    ],
     soldOut: true,
   },
   {
@@ -75,12 +76,12 @@ export const mockMeals = [
     weight: "220 gr",
     allergens: ["Eggs", "Fish", "Milk"],
     price: 750,
-    calories: 300,
-    nutrition: {
-      proteins: "15g",
-      carbohydrates: "20g",
-      fats: "18g",
-    },
+    nutrition: [
+      { name: `calories`, value: "300" },
+      { name: `proteins`, value: "15g" },
+      { name: `carbohydrates`, value: "20g" },
+      { name: `fats`, value: "18g" },
+    ],
     soldOut: true,
   },
   {
@@ -89,12 +90,13 @@ export const mockMeals = [
     weight: "300 gr",
     allergens: ["Gluten", "Eggs"],
     price: 950,
-    calories: 410,
-    nutrition: {
-      proteins: "14g",
-      carbohydrates: "58g",
-      fats: "12g",
-    },
+
+    nutrition: [
+      { name: `calories`, value: "410" },
+      { name: `proteins`, value: "14g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -103,12 +105,12 @@ export const mockMeals = [
     weight: "200 gr",
     allergens: ["Nuts"],
     price: 850,
-    calories: 250,
-    nutrition: {
-      proteins: "6g",
-      carbohydrates: "24g",
-      fats: "15g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -117,12 +119,12 @@ export const mockMeals = [
     weight: "250 gr",
     allergens: ["Celery"],
     price: 950,
-    calories: 300,
-    nutrition: {
-      proteins: "18g",
-      carbohydrates: "45g",
-      fats: "5g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -131,12 +133,12 @@ export const mockMeals = [
     weight: "200 gr",
     allergens: ["None"],
     price: 650,
-    calories: 400,
-    nutrition: {
-      proteins: "5g",
-      carbohydrates: "60g",
-      fats: "20g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -146,11 +148,12 @@ export const mockMeals = [
     allergens: ["Tomato", "Cucumber"],
     price: 700,
     calories: 150,
-    nutrition: {
-      proteins: "4g",
-      carbohydrates: "18g",
-      fats: "5g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: true,
   },
   {
@@ -160,11 +163,12 @@ export const mockMeals = [
     allergens: ["None"],
     price: 650,
     calories: 400,
-    nutrition: {
-      proteins: "5g",
-      carbohydrates: "60g",
-      fats: "20g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
   {
@@ -173,12 +177,12 @@ export const mockMeals = [
     weight: "300 gr",
     allergens: ["Shellfish", "Fish"],
     price: 1200, // Price in cents
-    calories: 520,
-    nutrition: {
-      proteins: "25g",
-      carbohydrates: "72g",
-      fats: "12g",
-    },
+    nutrition: [
+      { name: `calories`, value: "450" },
+      { name: `proteins`, value: "30g" },
+      { name: `carbohydrates`, value: "10g" },
+      { name: `fats`, value: "20g" },
+    ],
     soldOut: false,
   },
 ];
