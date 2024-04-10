@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root from "./routes/root.jsx";
+//import Root from "./routes/root.jsx";
 import Privacy from "./routes/privacy.jsx";
 import ErrorPage from "./routes/error-page.jsx";
 import Meals from "./routes/meals.jsx";
@@ -11,8 +11,8 @@ import HowItWorks from "./routes/how-it-works.jsx";
 import Faqs from "./routes/faqs.jsx";
 
 import "./index.css";
-import CustomNavbar from "./components/navbar/navbar.jsx";
-import CustomFooter from "./components/footer/footer.jsx";
+
+import RootLayout from "./root-layout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,14 +44,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    
-    <div className="flex flex-col h-screen justify-between">
-      <CustomNavbar />
-      <div className="flex flex-col items-start justify-center"><RouterProvider router={router} /></div>
-      
-      <CustomFooter />
-    </div>
-   
+    <RootLayout>
+      <RouterProvider router={router} />
+    </RootLayout>
   </React.StrictMode>
 );
-
