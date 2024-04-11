@@ -6,9 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Privacy from "./routes/privacy.jsx";
 import ErrorPage from "./routes/error-page.jsx";
 import Meals from "./routes/meals.jsx";
-import AboutUs from "./routes/about-us.jsx";
 import HowItWorks from "./routes/how-it-works.jsx";
 import Faqs from "./routes/faqs.jsx";
+import Terms from "./routes/terms-of-service.jsx";
 
 import "./index.css";
 
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
     element: <Meals />,
   },
   {
-    path: "/about-us",
-    element: <AboutUs />,
+    path: "/terms-of-service",
+    element: <Terms />,
   },
   {
     path: "/how-it-works",

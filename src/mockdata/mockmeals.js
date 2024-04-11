@@ -117,7 +117,7 @@ export const mockMeals = [
     title: "Spicy Black Bean Soup",
     imageUrl: "https://baconmockup.com/420/340/",
     weight: "250 gr",
-    allergens: ["Celery"],
+    allergens: ["Celery", "Egg"],
     price: 950,
     nutrition: [
       { name: `calories`, value: "450" },
@@ -145,7 +145,7 @@ export const mockMeals = [
     title: "Gazpacho",
     imageUrl: "https://baconmockup.com/420/340/",
     weight: "250 gr",
-    allergens: ["Tomato", "Cucumber"],
+    allergens: ["Celery", "Sulphite"],
     price: 700,
     calories: 150,
     nutrition: [
@@ -175,7 +175,7 @@ export const mockMeals = [
     title: "Seafood Paella",
     imageUrl: "https://baconmockup.com/420/340/",
     weight: "300 gr",
-    allergens: ["Shellfish", "Fish"],
+    allergens: ["Mollusc", "Fish"],
     price: 1200, // Price in cents
     nutrition: [
       { name: `calories`, value: "450" },
