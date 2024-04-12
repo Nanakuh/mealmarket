@@ -9,15 +9,17 @@ import Meals from "./routes/meals.jsx";
 import HowItWorks from "./routes/how-it-works.jsx";
 import Faqs from "./routes/faqs.jsx";
 import Terms from "./routes/terms-of-service.jsx";
+import Root from "./routes/root.jsx";
 
 import "./index.css";
 
 import RootLayout from "./root-layout.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Meals />,
+    element: <Root />,
     errorElement: <ErrorPage />,
   },
   {

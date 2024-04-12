@@ -21,69 +21,65 @@ import NutritionalData from "../nutritional-data/nutritional-data";
 MealCard.propTypes = {
   title: PropTypes.string.isRequired,
   imgUrl: PropTypes.string,
-  weight: PropTypes.string,
   allergens: PropTypes.array,
   price: PropTypes.number.isRequired,
-  calories: PropTypes.number,
   nutrition: {
-    proteins: PropTypes.string,
-    carbohydrates: PropTypes.string,
+    quantity: PropTypes.string,
+    calories: PropTypes.string,
+    energy: PropTypes.string,
     fats: PropTypes.string,
+    saturatedFats: PropTypes.string,
+    carbohydrates: PropTypes.string,
+    sugars: PropTypes.string,
+    protein: PropTypes.string,
+    dietaryFiber: PropTypes.string,
+    salt: PropTypes.string,
   },
-  soldOut: PropTypes.bool.isRequired,
+  stock: PropTypes.number.isRequired,
 };
 
-function MealCard({
-  title,
-  imgUrl,
-  weight,
-  allergens,
-  price,
-  calories,
-  nutrition,
-  soldOut,
-}) {
+function MealCard({ title, imgUrl, allergens, price, nutrition, stock }) {
   function getAllergen(allergen) {
-    if (allergen === "Nuts") {
+    if (allergen === "NUTS") {
       return <NutsIcon width={25} height={25} />;
     }
-    if (allergen === "Gluten") {
+    if (allergen === "GLUTEN") {
       return <GlutenIcon width={25} height={25} />;
     }
-    if (allergen === "Crustacean") {
+    if (allergen === "CRUSTACEAN") {
       return <CrustaceanIcon width={25} height={25} />;
     }
-    if (allergen === "Fish") {
+    if (allergen === "FISH") {
       return <FishIcon width={25} height={25} />;
     }
-    if (allergen === "Peanut") {
+    if (allergen === "PEANUT") {
       return <PeanutIcon width={25} height={25} />;
     }
-    if (allergen === "Soya") {
+    if (allergen === "SOYA") {
       return <SoyaIcon width={25} height={25} />;
     }
-    if (allergen === "Milk") {
+    if (allergen === "MILK") {
       return <MilkIcon width={25} height={25} />;
     }
-    if (allergen === "Celery") {
+    if (allergen === "CELERY") {
       return <CeleryIcon width={25} height={25} />;
     }
-    if (allergen === "Mustard") {
+    if (allergen === "MUSTARD") {
       return <MustardIcon width={25} height={25} />;
     }
-    if (allergen === "Sesame") {
+    if (allergen === "SESAME") {
       return <SesameIcon width={25} height={25} />;
     }
-    if (allergen === "Sulphite") {
+    if (allergen === "SULPHITE") {
       return <SulphiteIcon width={25} height={25} />;
     }
-    if (allergen === "Lupin") {
+    if (allergen === "LUPIN") {
       return <LupinIcon width={25} height={25} />;
     }
-    if (allergen === "Mollusc") {
+    if (allergen === "MOLLUSC") {
       return <MolluscIcon width={25} height={25} />;
     }
-    if (allergen === "Egg") {
+    if (allergen === "EGG") {
       return <EggIcon width={25} height={25} />;
     }
   }
@@ -94,10 +90,9 @@ function MealCard({
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
           {title}
         </h5>
-        <p>{weight}</p>
+        <p>{nutrition.quantity}</p>
       </div>
       <div className="flex items-center justify-between">
-        
         <div className="flex flex-row ">
           {allergens.map((allergen, i) => {
             return (
@@ -109,17 +104,18 @@ function MealCard({
         </div>
       </div>
       <div className="bg-gray-100 flex items-center justify-around p-2 rounded-3xl">
-        {nutrition.map((item, i) => (
-          <NutritionalData key={i} name={item.name} value={item.value} />
-        ))}
+        <NutritionalData name={"calories"} value={nutrition.calories} />
+        <NutritionalData name={"fats"} value={nutrition.fats} />
+        <NutritionalData name={"sugars"} value={nutrition.sugars} />
+        <NutritionalData name={"protein"} value={nutrition.protein} />
       </div>
       <div className="flex items-center justify-between">
         <span className="text-3xl font-bold text-gray-900 dark:text-white">
-          {(price / 100).toFixed(2)} €
+          {price.toFixed(2)} €
         </span>
 
-        <Button color="success" disabled={soldOut}>
-          {soldOut ? "Out of stock" : "Add to cart"}
+        <Button color="success" disabled={stock > 0 ? false : true}>
+          {stock > 0 ? "Add to cart" : "Out of stock"}
         </Button>
       </div>
     </Card>
