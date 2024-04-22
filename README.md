@@ -6,11 +6,11 @@ Welcome to Mealmarket, your one-stop destination for ordering delicious food onl
 Mealmarket simplifies the process of ordering food online. With a user-friendly interface and seamless navigation, customers can browse through a variety of cuisines.
 
 # Key Features
-User Authentication: Secure user registration and login functionality.
-Intuitive Menu Navigation: Easy-to-use interface for browsing food items.
-Order Management: Customers can easily add, remove, and edit items in their cart.
-Real-time Updates: Track the status of orders from preparation to delivery.
-Responsive Design: Optimized for desktop, tablet, and mobile devices for a consistent user experience.
+**User Authentication:** Secure user registration and login functionality.
+**Intuitive Menu Navigation:** Easy-to-use interface for browsing food items.
+**Order Management:** Customers can easily add, remove, and edit items in their cart.
+**Real-time Updates:** Track the status of orders from preparation to delivery.
+**Responsive Design:** Optimized for desktop, tablet, and mobile devices for a consistent user experience.
 
 # Deployment
 Mealmarket is deployed on Render. Any changes pushed to the main branch will automatically trigger a deployment to the production environment. This may take a few minutes
