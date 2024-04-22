@@ -14,3 +14,15 @@ Responsive Design: Optimized for desktop, tablet, and mobile devices for a consi
 
 # Deployment
 Mealmarket is deployed on Render. Any changes pushed to the main branch will automatically trigger a deployment to the production environment. This may take a few minutes
+
+I hope this README has been useful to you.
+
+If you have any suggestions, do not hesitate to contact me 🙂:
+
+email: anagilrodrig@gmail.com
+
+linkedin: https://www.linkedin.com/in/ana-maria-gil-rod/
+
+github: https://github.com/Nanakuh
+
+Authors @Nanakuh
