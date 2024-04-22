@@ -1,9 +1,16 @@
-# React + Vite
+# MEALMARKET
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Mealmarket, your one-stop destination for ordering delicious food online! YummyEats is a modern web application built using React, Tailwind CSS, Vite, Flowbite, PropTypes, JavaScript, and Node.js. The application is deployed on Render.
 
-Currently, two official plugins are available:
+# About
+Mealmarket simplifies the process of ordering food online. With a user-friendly interface and seamless navigation, customers can browse through a variety of cuisines.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-cards
+# Key Features
+User Authentication: Secure user registration and login functionality.
+Intuitive Menu Navigation: Easy-to-use interface for browsing food items.
+Order Management: Customers can easily add, remove, and edit items in their cart.
+Real-time Updates: Track the status of orders from preparation to delivery.
+Responsive Design: Optimized for desktop, tablet, and mobile devices for a consistent user experience.
+
+# Deployment
+Mealmarket is deployed on Render. Any changes pushed to the main branch will automatically trigger a deployment to the production environment. This may take a few minutes
