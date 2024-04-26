@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import MealCard from "../components/meal-card/meal-card";
+import { Badge } from "flowbite-react";
 
 function Meals() {
   const [meals, setMeals] = useState();
+  const [categories, setCategories] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,6 +17,10 @@ function Meals() {
         }
         const data = await response.json();
         setMeals(data);
+        const categories = data.map((meal) => meal.foodGroup);
+
+        const filteredCategories = [...new Set(categories)];
+        setCategories(filteredCategories);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
@@ -24,22 +30,34 @@ function Meals() {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {meals ? (
-        meals.map((meal, i) => (
-          <MealCard
-            key={i}
-            title={meal.name}
-            imgUrl={meal.images[0]}
-            allergens={meal.allergens}
-            price={meal.price}
-            nutrition={meal.nutritionalInfo[1]}
-            stock={meal.stock}
-          />
-        ))
-      ) : (
-        <h2>Cargando</h2>
-      )}
+    <div>
+      <div>
+        <h2>filtros</h2>
+
+        {categories &&
+          categories.map((category, i) => (
+            <Badge key={i} color="gray">
+              {category}
+            </Badge>
+          ))}
+      </div>
+      <div className="flex flex-wrap justify-center">
+        {meals ? (
+          meals.map((meal, i) => (
+            <MealCard
+              key={i}
+              title={meal.name}
+              imgUrl={meal.images[0]}
+              allergens={meal.allergens}
+              price={meal.price}
+              nutrition={meal.nutritionalInfo[1]}
+              stock={meal.stock}
+            />
+          ))
+        ) : (
+          <h2>Cargando</h2>
+        )}
+      </div>
     </div>
   );
 }
