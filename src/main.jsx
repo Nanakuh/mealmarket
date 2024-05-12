@@ -10,6 +10,7 @@ import HowItWorks from "./routes/how-it-works.jsx";
 import Faqs from "./routes/faqs.jsx";
 import Terms from "./routes/terms-of-service.jsx";
 import Root from "./routes/root.jsx";
+import Contact from "./routes/contact.jsx";
 
 import "./index.css";
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/faqs",
     element: <Faqs />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
