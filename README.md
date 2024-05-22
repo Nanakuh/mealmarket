@@ -18,9 +18,11 @@ Mealmarket simplifies the process of ordering food online. With a user-friendly 
 **Responsive Design:** Optimized for desktop, tablet, and mobile devices for a consistent user experience.
 
 # Deployment
-Mealmarket is deployed on Render. Any changes pushed to the main branch will automatically trigger a deployment to the production environment. This may take a few minutes
+Mealmarket is deployed on Render. Any changes pushed to the main branch will automatically trigger a deployment to the production environment. This may take a few minutes.
 
 I hope this README has been useful to you.
+
+I'm still working on this project.
 
 If you have any suggestions, do not hesitate to contact me 🙂:
 
