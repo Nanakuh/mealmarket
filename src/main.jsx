@@ -11,6 +11,7 @@ import Faqs from "./routes/faqs.jsx";
 import Terms from "./routes/terms-of-service.jsx";
 import Root from "./routes/root.jsx";
 import Contact from "./routes/contact.jsx";
+import AboutUs from "./routes/about-us.jsx";
 
 import "./index.css";
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/how-it-works",
     element: <HowItWorks />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
   },
   {
     path: "/faqs",
