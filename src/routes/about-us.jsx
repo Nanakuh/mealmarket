@@ -6,14 +6,14 @@ function AboutUs() {
       <h2 className="text-emerald-800 font-black tracking-wider text-2xl flex justify-center my-10">About Us</h2>
 
       <p>
-        <strong>
-          Welcome to [Company Name], your best choice for enjoying delicious and
+        <strong className="text-emerald-800 font-black text-2xl flex my-10">
+          Welcome to Recetas de Anita™, your best choice for enjoying delicious and
           quality food in the comfort of your home.
         </strong>
       </p>
 
       <p>
-        At [Company Name], we are passionate about food. We believe every bite
+        At Recetas de Anita™, we are passionate about food. We believe every bite
         should be a memorable experience, which is why we are dedicated to
         offering you a variety of dishes that satisfy all tastes and
         preferences. From our succulent burgers and artisanal pizzas to healthy
@@ -21,18 +21,17 @@ function AboutUs() {
         high-quality ingredients.
       </p>
 
-      <h3>Our Story</h3>
+      <h3 className="text-emerald-800 font-black text-2xl flex my-10">Our Story</h3>
 
       <p>
-        [Company Name] was born from a simple idea: to bring the best food
-        directly to your door. Founded in [Year of Foundation] by [Founder’s
-        Name], a food enthusiast, our company has grown thanks to the trust and
+      Recetas de Anita™ was born from a simple idea: to bring the best food
+        directly to your door. Founded in 2024 by Anita, a food enthusiast, our company has grown thanks to the trust and
         support of our amazing customers. What started as a small family
         business quickly became the go-to choice for those seeking convenience
         without sacrificing flavor.
       </p>
 
-      <h3>Our Mission</h3>
+      <h3 className="text-emerald-800 font-black text-2xl flex my-10">Our Mission</h3>
 
       <p>
         Our mission is clear: to offer an exceptional culinary experience
@@ -43,7 +42,7 @@ function AboutUs() {
         service.
       </p>
 
-      <h3>Our Commitment</h3>
+      <h3 className="text-emerald-800 font-black text-2xl flex my-10">Our Commitment</h3>
 
       <ul>
         <li>
@@ -70,7 +69,7 @@ function AboutUs() {
       <h3>Join Our Family</h3>
 
       <p>
-        At [Company Name], we don’t just serve food; we build a community of
+        At Recetas de Anita™, we don’t just serve food; we build a community of
         food lovers. Follow us on social media to stay updated on our latest
         news, exclusive promotions, and special events.
       </p>

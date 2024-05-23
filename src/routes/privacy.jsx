@@ -4,7 +4,7 @@ function Privacy() {
     <p className="mb-4 text-justify">
     This Privacy Policy describes how [Company Name] ("we", "us" or "our") collects, uses and shares the personal information of users ("users" or "you") of our website. . [Website URL] ("the site").
   </p>
-  <h3 className="text-emerald-800 font-semibold mb-4 text-justify">1. Information we collect</h3>
+  <h3 className="text-emerald-800 font-semibold my-6 text-justify">1. Information we collect</h3>
   <ol className="mb-4 text-justify">
     We collect the following personal information from users:
     <ul>
@@ -13,7 +13,7 @@ function Privacy() {
       <li className="mb-4 text-justify"> - Profile information: such as seating preferences, purchase history.</li>
     </ul>
   </ol>
-  <h3 className="text-emerald-800 font-semibold mb-4 text-justify">2. Use of information</h3>
+  <h3 className="text-emerald-800 font-semibold my-6 text-justify">2. Use of information</h3>
   <ol className="mb-4 text-justify">
     We use the personal information collected for the following purposes:
     <ul>
