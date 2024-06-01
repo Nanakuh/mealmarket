@@ -32,11 +32,11 @@ function Meals() {
   return (
     <div>
       <div>
-        <h2>filtros</h2>
+        <h2>Filtros</h2>
 
         {categories &&
           categories.map((category, i) => (
-            <Badge key={i} color="gray">
+            <Badge key={i} color="gray"className="flex flex-wrap justify-center">
               {category}
             </Badge>
           ))}

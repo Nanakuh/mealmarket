@@ -5,11 +5,11 @@ function Faqs() {
     {
       question: "What are the delivery times?",
       answer:
-        "Delivery times are Monday to Friday from 9:00 a.m. to 9:00 p.m. and Saturdays from 10:00 a.m. to 8:00 p.m.",
+        "Delivery times are Monday to Friday from 9:00 a.m. to 9:00 p.m. and Saturdays from 10:00 a.m. to 10:00 p.m.",
     },
     {
       question: "What is the delivery coverage area?",
-      answer: "We currently deliver throughout the city of [name of city].",
+      answer: "We currently deliver throughout the city of Madrid.",
     },
     {
       question: "What are the accepted payment methods?",

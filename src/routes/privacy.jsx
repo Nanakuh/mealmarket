@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 function Privacy() {
   return <div className="m-10">
   <h2 className="text-emerald-800 font-black tracking-wider text-2xl flex justify-center my-10">PRIVACY POLICY</h2>
