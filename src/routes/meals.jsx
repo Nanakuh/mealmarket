@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import MealCard from "../components/meal-card/meal-card";
-import { Badge } from "flowbite-react";
+//import { Badge } from "flowbite-react";
 
 function Meals() {
   const [meals, setMeals] = useState();
-  const [categories, setCategories] = useState();
+  //const [categories, setCategories] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,10 +17,10 @@ function Meals() {
         }
         const data = await response.json();
         setMeals(data);
-        const categories = data.map((meal) => meal.foodGroup);
+        //const categories = data.map((meal) => meal.foodGroup);
 
-        const filteredCategories = [...new Set(categories)];
-        setCategories(filteredCategories);
+        //const filteredCategories = [...new Set(categories)];
+        //setCategories(filteredCategories);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
