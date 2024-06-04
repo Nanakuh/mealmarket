@@ -1,7 +1,7 @@
 function HowItWorks() {
   return (
-    <div>
-      <h2 className="text-emerald-800 font-black tracking-wider text-2xl flex justify-center my-10">How It Works</h2>
+    <div className="justify-content:center justify-center w-full max-w-screen-md text-justify">
+      <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">HOW IT WORKS</h2>
 
       <h3 className="text-emerald-800 font-black text-1xl flex ml-7 my-7">Step 1: Browse Our Menu</h3>
       <p className="ml-7">

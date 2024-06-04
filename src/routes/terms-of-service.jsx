@@ -1,7 +1,7 @@
 function Terms() {
   return (
-    <div className="m-10">
-      <h2 className="text-emerald-800 font-black tracking-wider text-2xl flex justify-center my-10">
+    <div className="justify-content:center justify-center w-full max-w-screen-md text-justify">
+      <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">
         TERMS OF SERVICE OF THIS FOOD RETAIL SITE
       </h2>
       <ol>

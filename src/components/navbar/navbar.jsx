@@ -16,7 +16,7 @@ function CustomNavbar() {
           alt="Flowbite React Logo"
         />
         <span className="text-white self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Recetas de Anita
+        Nana's recipes
         </span>
       </Navbar.Brand>
       <Navbar.Toggle />

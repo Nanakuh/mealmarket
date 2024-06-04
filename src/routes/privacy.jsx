@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 function Privacy() {
-  return <div className="m-10">
-  <h2 className="text-emerald-800 font-black tracking-wider text-2xl flex justify-center my-10">PRIVACY POLICY</h2>
+  return <div className="justify-content:center justify-center w-full max-w-screen-md text-justify">
+  <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">PRIVACY POLICY</h2>
     <p className="mb-4 text-justify">
     This Privacy Policy describes how [Company Name] ("we", "us" or "our") collects, uses and shares the personal information of users ("users" or "you") of our website. . [Website URL] ("the site").
   </p>
