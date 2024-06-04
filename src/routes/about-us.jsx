@@ -9,13 +9,13 @@ function AboutUs() {
 
       <p>
         <strong className="text-emerald-800 font-black text-2xl flex my-10">
-          Welcome to Recetas de Anita™, your best choice for enjoying delicious
+          Welcome to Nana's recipes™, your best choice for enjoying delicious
           and quality food in the comfort of your home.
         </strong>
       </p>
 
       <p>
-        At Recetas de Anita™, we are passionate about food. We believe every
+        At Nana's recipes™, we are passionate about food. We believe every
         bite should be a memorable experience, which is why we are dedicated to
         offering you a variety of dishes that satisfy all tastes and
         preferences. From our succulent burgers and artisanal pizzas to healthy
@@ -28,8 +28,8 @@ function AboutUs() {
       </h3>
 
       <p>
-        Recetas de Anita™ was born from a simple idea: to bring the best food
-        directly to your door. Founded in 2024 by Anita, a food enthusiast, our
+        Nana's recipes™ was born from a simple idea: to bring the best food
+        directly to your door. Founded in 2024 by Nana, a food enthusiast, our
         company has grown thanks to the trust and support of our amazing
         customers. What started as a small family business quickly became the
         go-to choice for those seeking convenience without sacrificing flavor.
@@ -77,7 +77,7 @@ function AboutUs() {
       <h3>Join Our Family</h3>
 
       <p>
-        At Recetas de Anita™, we don’t just serve food; we build a community of
+        At Nana's recipes™, we don’t just serve food; we build a community of
         food lovers. Follow us on social media to stay updated on our latest
         news, exclusive promotions, and special events.
       </p>
