@@ -36,9 +36,18 @@ MealCard.propTypes = {
     salt: PropTypes.string,
   },
   stock: PropTypes.number.isRequired,
+  canBuy: PropTypes.bool.isRequired
 };
 
-function MealCard({ title, imgUrl, allergens, price, nutrition, stock }) {
+function MealCard({
+  title,
+  imgUrl,
+  allergens,
+  price,
+  nutrition,
+  stock,
+  canBuy,
+}) {
   function getAllergen(allergen) {
     if (allergen === "NUTS") {
       return <NutsIcon width={25} height={25} />;
@@ -109,15 +118,18 @@ function MealCard({ title, imgUrl, allergens, price, nutrition, stock }) {
         <NutritionalData name={"sugars"} value={nutrition.sugars} />
         <NutritionalData name={"protein"} value={nutrition.protein} />
       </div>
-      <div className="flex items-center justify-between">
-        <span className="text-3xl font-bold text-gray-900 dark:text-white">
-          {price.toFixed(2)} €
-        </span>
 
-        <Button color="success" disabled={stock > 0 ? false : true}>
-          {stock > 0 ? "Add to cart" : "Out of stock"}
-        </Button>
-      </div>
+      {canBuy && (
+        <div className="flex items-center justify-between">
+          <span className="text-3xl font-bold text-gray-900 dark:text-white">
+            {price.toFixed(2)} €
+          </span>
+
+          <Button color="success" disabled={stock > 0 ? false : true}>
+            {stock > 0 ? "Add to cart" : "Out of stock"}
+          </Button>
+        </div>
+      )}
     </Card>
   );
 }

@@ -31,7 +31,7 @@ function Meals() {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <h2>Filtros</h2>
 
         {categories &&
@@ -40,7 +40,7 @@ function Meals() {
               {category}
             </Badge>
           ))}
-      </div>
+      </div> */}
       <div className="flex flex-wrap justify-center">
         {meals ? (
           meals.map((meal, i) => (
@@ -52,6 +52,7 @@ function Meals() {
               price={meal.price}
               nutrition={meal.nutritionalInfo[1]}
               stock={meal.stock}
+              canBuy={true}
             />
           ))
         ) : (
