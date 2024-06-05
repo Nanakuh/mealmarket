@@ -1,12 +1,14 @@
 function Terms() {
   return (
     <div className="justify-content:center justify-center w-full max-w-screen-md text-justify">
-      <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">
+      <h2 className="text-orange-300 font-black tracking-wider text-2xl flex justify-center my-10">
         TERMS OF SERVICE OF THIS FOOD RETAIL SITE
       </h2>
       <ol>
         <li>
-          <p className="text-emerald-800 font-semibold">Acceptance of Terms of Service:</p>
+          <p className="text-emerald-800 font-semibold">
+            Acceptance of Terms of Service:
+          </p>
           <p className="mb-4 text-justify">
             By accessing and using our services, you agree to abide by these
             terms of service. If you do not agree to any of these terms, you may
@@ -14,7 +16,9 @@ function Terms() {
           </p>
         </li>
         <li>
-          <p className="text-emerald-800 font-semibold">Description of Service:</p>
+          <p className="text-emerald-800 font-semibold">
+            Description of Service:
+          </p>
           <p className="mb-4 text-justify">
             Our ticketing site facilitates the purchase of tickets for a variety
             of events, including concerts, festivals, plays, sporting events,
@@ -22,7 +26,9 @@ function Terms() {
           </p>
         </li>
         <li>
-          <p className="text-emerald-800 font-semibold">Account Registration:</p>
+          <p className="text-emerald-800 font-semibold">
+            Account Registration:
+          </p>
           <p className="mb-4 text-justify">
             To make a purchase, you may need to register and create an account.
             It is your responsibility to maintain the confidentiality of your
@@ -48,7 +54,9 @@ function Terms() {
         </li>
 
         <li>
-          <p className="text-emerald-800 font-semibold">Cancellation and Changes:</p>
+          <p className="text-emerald-800 font-semibold">
+            Cancellation and Changes:
+          </p>
           <p className="mb-4 text-justify">
             We reserve the right to cancel, change or modify any event,
             including changes to the date, time or location. In the event of
@@ -64,7 +72,9 @@ function Terms() {
           </p>
         </li>
         <li>
-          <p className="text-emerald-800 font-semibold">Limitation of Liability:</p>
+          <p className="text-emerald-800 font-semibold">
+            Limitation of Liability:
+          </p>
           <p className="mb-4 text-justify">
             We are not responsible for any damage, loss or injury related to the
             use of our services or attendance at events purchased through our

@@ -3,7 +3,7 @@
 function AboutUs() {
   return (
     <div className="justify-content:center justify-center w-full max-w-screen-md text-justify">
-      <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">
+      <h2 className="text-orange-300 font-black tracking-wider text-2xl flex justify-center my-10">
         ABOUT US
       </h2>
 
@@ -15,8 +15,8 @@ function AboutUs() {
       </p>
 
       <p>
-        At Nana's recipes™, we are passionate about food. We believe every
-        bite should be a memorable experience, which is why we are dedicated to
+        At Nana's recipes™, we are passionate about food. We believe every bite
+        should be a memorable experience, which is why we are dedicated to
         offering you a variety of dishes that satisfy all tastes and
         preferences. From our succulent burgers and artisanal pizzas to healthy
         and gourmet options, each of our dishes is prepared with fresh,

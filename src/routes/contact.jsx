@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <h2 className="text-purple-600 font-black tracking-wider text-2xl flex justify-center my-10">
+      <h2 className="text-orange-300 font-black tracking-wider text-2xl flex justify-center my-10">
         CONTACT
       </h2>
       <p className="mb-4">
