@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import MealCard from "../components/meal-card/meal-card";
-//import { Badge } from "flowbite-react";
+import { Badge } from "flowbite-react";
 
 function Meals() {
   const [meals, setMeals] = useState();
-  //const [categories, setCategories] = useState();
+  const [categories, setCategories] = useState();
+  const [selectedFilter, setSelectedFilter] = useState("All food");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,10 +18,10 @@ function Meals() {
         }
         const data = await response.json();
         setMeals(data);
-        //const categories = data.map((meal) => meal.foodGroup);
+        const categories = data.map((meal) => meal.foodGroup);
 
-        //const filteredCategories = [...new Set(categories)];
-        //setCategories(filteredCategories);
+        const filteredCategories = [...new Set(categories)];
+        setCategories(filteredCategories);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
@@ -31,17 +32,33 @@ function Meals() {
 
   return (
     <div>
-      {/* <div>
-        <h2>Filtros</h2>
+      <section className="p-4">
+        <div className="justify-center flex space-x-4 mb-4">
+          {categories &&
+            categories.map((category) => (
+              <Badge
+                key={category}
+                color={selectedFilter === category ? "warning" : "success"}
+                onClick={() => setSelectedFilter(category)}
+                className={`cursor-pointer px-4 py-2 rounded-full capitalize `}
+              >
+                {category}
+              </Badge>
+            ))}
+        </div>
 
-        {categories &&
-          categories.map((category, i) => (
-            <Badge key={i} color="gray"className="flex flex-wrap justify-center">
-              {category}
-            </Badge>
-          ))}
-      </div> */}
-      <div className="flex flex-wrap justify-center">
+        {/* <div className="justify-center bg-gray-100 p-4 rounded-lg">
+          <h2 className="text-2xl font-bold">
+            Meals <span className="text-gray-500">{meals && meals.length}</span>
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Choose from our weekly variety of dishes. We change the menu every
+            Monday, so if you like something, order it before the end of
+            Sunday.
+          </p>
+        </div> */}
+      </section>
+      <section className="flex flex-wrap justify-center">
         {meals ? (
           meals.map((meal, i) => (
             <MealCard
@@ -58,7 +75,7 @@ function Meals() {
         ) : (
           <h2>Cargando</h2>
         )}
-      </div>
+      </section>
     </div>
   );
 }
