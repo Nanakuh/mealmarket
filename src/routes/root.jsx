@@ -51,7 +51,7 @@ function Root() {
             </li>
           </ul>
           <Link to={"/meals"}>
-            <button className="px-6 py-3 bg-purple-500 hover:bg-purple-700 text-white font-bold rounded-full">
+            <button className="px-6 py-3 bg-orange-500 hover:bg-orange-700 text-white font-bold rounded-full">
             PLACE YOUR ORDER NOW
             </button>
           </Link>
@@ -108,7 +108,7 @@ function Root() {
           </div>
         </div>
         <Link to={"/meals"}>
-          <button className="mt-8 px-6 py-3 bg-purple-500 hover:bg-purple-700 text-white font-bold rounded-full">
+          <button className="mt-8 px-6 py-3 bg-orange-500 hover:bg-orange-700 text-white font-bold rounded-full">
             EAT HEALTHY!
           </button>
         </Link>

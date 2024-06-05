@@ -27,7 +27,7 @@ function Faqs() {
   return (
     <div className="bg-gray-100 flex justify-center items-center h-screen w-full">
       <div className="flex flex-col items-center w-full">
-        <h1 className="text-3xl font-bold mb-4">FAQs</h1>
+        <h1 className="text-orange-500 text-3xl font-bold mb-4">FAQs</h1>
         <Accordion className="min-w-4">
           {questionAnswers.map((item, i) => (
             <Accordion.Panel key={i}>
