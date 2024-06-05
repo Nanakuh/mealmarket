@@ -70,7 +70,7 @@ function Root() {
           <div className="max-w-xs">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="../../image01.svg"
+                src="../../foodselection.webp"
                 alt="Elige"
                 className="mx-auto mb-4"
               />
@@ -83,7 +83,7 @@ function Root() {
           <div className="max-w-xs">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="../../image02.svg"
+                src="../../deliverytruck.webp"
                 alt="Recibe"
                 className="mx-auto mb-4"
               />
@@ -96,7 +96,7 @@ function Root() {
           <div className="max-w-xs">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                src="../../image03.svg"
+                src="../../microwave.webp"
                 alt="Calienta"
                 className="mx-auto mb-4"
               />
