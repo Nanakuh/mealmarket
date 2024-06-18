@@ -118,8 +118,7 @@ function Root() {
           {meals ? (
             meals
               .sort(() => Math.random() - 0.5)
-
-              .slice(0, 3)
+              .slice(0, 4)
               .map((meal, i) => (
                 <MealCard
                   key={i}

@@ -94,7 +94,7 @@ function MealCard({
   }
 
   return (
-    <Card className="max-w-sm m-5" imgAlt={title} imgSrc={imgUrl}>
+    <Card className="max-w-xs m-5" imgAlt={title} imgSrc={imgUrl}>
       <div className="flex items-center justify-between">
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
           {title}
