@@ -3,9 +3,10 @@ import MealCard from "../components/meal-card/meal-card";
 import { Badge } from "flowbite-react";
 
 function Meals() {
-  const [meals, setMeals] = useState();
+  const [meals, setMeals] = useState([]);
   const [categories, setCategories] = useState();
-  const [selectedFilter, setSelectedFilter] = useState("All food");
+  const [selectedFilter, setSelectedFilter] = useState("All");
+  const [mealsFiltered, setMealsFiltered] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,9 +19,10 @@ function Meals() {
         }
         const data = await response.json();
         setMeals(data);
+        setMealsFiltered(data);
         const categories = data.map((meal) => meal.foodGroup);
 
-        const filteredCategories = [...new Set(categories)];
+        const filteredCategories = ["All", ...new Set(categories)]; // Crea un array nuevo sin duplicados
         setCategories(filteredCategories);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
@@ -29,6 +31,17 @@ function Meals() {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (selectedFilter !== "All") {
+      const mealsFilteredByFoodGroup = meals.filter(
+        (meal) => meal.foodGroup === selectedFilter
+      );
+      setMealsFiltered(mealsFilteredByFoodGroup);
+    }else{
+      setMealsFiltered (meals)
+    }
+  }, [selectedFilter]);
 
   return (
     <div>
@@ -59,8 +72,8 @@ function Meals() {
         </div> */}
       </section>
       <section className="flex flex-wrap justify-center">
-        {meals ? (
-          meals.map((meal, i) => (
+        {mealsFiltered ? (
+          mealsFiltered.map((meal, i) => (
             <MealCard
               key={i}
               title={meal.name}
