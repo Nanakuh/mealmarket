@@ -7,8 +7,6 @@ Mealmarket simplifies the process of ordering food online. With a user-friendly 
 
 # Key Features
 
-**User Authentication:** Secure user registration and login functionality.
-
 **Intuitive Menu Navigation:** Easy-to-use interface for browsing food items.
 
 **Order Management:** Customers can easily add, remove, and edit items in their cart.
